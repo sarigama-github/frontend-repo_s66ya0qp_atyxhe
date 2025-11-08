@@ -1,0 +1,32 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 588 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.7.109:3000/
+12:21:00 PM [vite] Pre-transform error: Failed to resolve import "three" from "src/components/NeonGridScene.jsx". Does the file exist?
+12:21:01 PM [vite] ✨ new dependencies optimized: @splinetool/react-spline
+12:21:01 PM [vite] ✨ optimized dependencies changed. reloading
+12:21:01 PM [vite] Internal server error: Failed to resolve import "three" from "src/components/NeonGridScene.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/components/NeonGridScene.jsx:2:23
+  1  |  import { jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import { useEffect, useMemo, useRef } from "react";
+  3  |  import * as THREE from "three";
+     |                          ^
+  4  |  import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
+  5  |  import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at normalizeUrl (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+12:21:18 PM [vite] Pre-transform error: Failed to resolve import "three" from "src/components/NeonGridScene.jsx". Does the file exist?
